@@ -65,7 +65,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T20:30:03.349Z  
+**Submitted:** 2026-08-05T20:31:03.435Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -86,7 +86,7 @@ int main() {
         }
         if(sum==0){
             cout<<n*m<<"\n";
-        }else if(n*m%sum==0){
+        }else if(n*m%2==0){
             cout<<1<<endl;
         }else cout<<2<<endl;
     }
