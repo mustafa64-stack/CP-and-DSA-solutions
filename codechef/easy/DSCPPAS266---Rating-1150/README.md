@@ -37,7 +37,6 @@ $1 \le arr[i] \le 10^4$
 ### Sample 1:
 Input
 Output
-Copy to clipboard
 
 ```
 4
@@ -74,7 +73,7 @@ There is no way to reduce the array to a single element.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T18:19:03.949Z  
+**Submitted:** 2026-08-07T18:19:30.946Z  
 
 ```c_cpp
 bool canReduce(int N, vector<int>& arr) {
