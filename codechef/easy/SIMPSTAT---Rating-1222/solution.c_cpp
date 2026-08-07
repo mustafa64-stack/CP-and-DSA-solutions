@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        double k;
+        cin>>n>>k;
+        double a[n];
+        for(int i=0;i<n;i++){
+            cin>>a[i];
+        }double summ=0.0;
+        // your code goes here
+        sort(a,a+n);
+        int m=k;
+        for(int i=m;i<n-m;i++){
+            summ+=a[i];
+        }printf("%.6f",summ/(n-2*k));
+        cout<<"\n";
+    }
+
+}
