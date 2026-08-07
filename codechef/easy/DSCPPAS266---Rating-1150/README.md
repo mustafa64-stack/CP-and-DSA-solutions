@@ -73,7 +73,7 @@ There is no way to reduce the array to a single element.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T18:20:47.498Z  
+**Submitted:** 2026-08-07T18:19:49.446Z  
 
 ```c_cpp
 bool canReduce(int N, vector<int>& arr) {
@@ -81,7 +81,7 @@ bool canReduce(int N, vector<int>& arr) {
     sort(arr.begin(),arr.end());
     int flag=1;
     for(int i=0;i<N-1;i++){
-        if(abs(arr[i]-arr[i+1])>1){
+        if(abs(arr[i]-arr[i+1])!=1){
             flag=0;
         }
     
