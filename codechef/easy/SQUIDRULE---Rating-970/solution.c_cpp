@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        int minn=1e5+1;
+        int sum=0;
+        cin>>n;
+        vector<int> a(n);
+        for(int i=0;i<n;i++){
+            cin>>a[i];
+            minn=min(a[i],minn);
+            sum+=a[i];
+        }
+        cout<<sum-minn<<endl;
+    }
+}
