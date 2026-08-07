@@ -65,7 +65,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T20:31:03.435Z  
+**Submitted:** 2026-08-07T03:40:40.218Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -78,17 +78,20 @@ int main() {
     while(t--){
         int n,m;
         cin>>n>>m;
-        int sum=0;
         string s;
         cin>>s;
+        int c=0;
+        int sum=0;
         for(int i=0;i<n;i++){
-            sum+=s[i]-'0';
+            if(s[i]=='1') c++;
+            else sum++;
+            
         }
-        if(sum==0){
-            cout<<n*m<<"\n";
-        }else if(n*m%2==0){
-            cout<<1<<endl;
-        }else cout<<2<<endl;
+        if(c==0){
+            cout<<n*m<<endl;
+        }else {
+            cout<<1+sum<<endl;
+        }
     }
 }
 
