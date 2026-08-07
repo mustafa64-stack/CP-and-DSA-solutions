@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t--){
+        long long x;
+        cin>>x;
+        string s;
+        cin>>s;
+        int cp=0,chp=0;
+        for(char i:s){
+            if(i=='C') cp+=2;
+            else if(i=='D') {cp++; chp++;}
+            else chp+=2;
+        }
+        if(cp>chp) cout<<60*x;
+        else if(cp<chp) cout<<40*x;
+        else cout<<55*x;
+        cout<<"\n";
+    }
+}
