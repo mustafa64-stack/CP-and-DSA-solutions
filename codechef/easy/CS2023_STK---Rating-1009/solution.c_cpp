@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+int max_streak_count(int n,int *arr){
+    int maxx=0,c=0;
+    for(int i=0;i<n;i++){
+        if(arr[i]==0) c=0;
+        else {
+            c++;
+            maxx=max(maxx,c);
+        }
+    }return maxx;
+}
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int a[n],b[n];
+        for(int i=0;i<n;i++){
+            cin>>a[i];
+        }
+        for(int i=0;i<n;i++){
+            cin>>b[i];
+        }int so=max_streak_count(n,a);
+        int sa=max_streak_count(n,b);
+        if(so>sa) cout<<"om"<<endl;
+        else if(sa>so) cout<<"addy"<<endl;
+        else cout<<"draw"<<endl;
+    }
+	// your code goes here
+
+}
