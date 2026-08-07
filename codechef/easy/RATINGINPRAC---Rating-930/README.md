@@ -62,7 +62,7 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T07:07:39.162Z  
+**Submitted:** 2026-08-07T07:08:12.295Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,7 +79,7 @@ int main() {
             cin>>d[i];
         }
         int flag=0,i=0;
-        for(i=0;i<n;i++){
+        for(i=0;i<n-1;i++){
             if(d[i]>d[i+1]) {
                 flag=1;
                 break;
