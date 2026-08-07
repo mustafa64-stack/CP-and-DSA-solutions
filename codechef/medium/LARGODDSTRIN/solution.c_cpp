@@ -1,0 +1,13 @@
+void findLargestOddSubstring(string num) {
+    // write your code here...
+    
+    string s,p;
+    for(char i:num){
+        int in=i-'0';
+        s+=i;
+        if((in&1)) p=s;
+        
+    }if(p.size()) cout<<p;
+    else cout<<-1;
+    
+}
