@@ -53,7 +53,7 @@ The minimum difference can be achieved if we pick horses with skills 1 and 4 for
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T14:00:11.055Z  
+**Submitted:** 2026-08-09T18:30:30.508Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
