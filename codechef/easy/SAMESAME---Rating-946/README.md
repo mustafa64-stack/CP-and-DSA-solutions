@@ -78,7 +78,7 @@ The minimum Hamming distance is thus $1$.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T12:01:22.075Z  
+**Submitted:** 2026-08-11T12:03:08.189Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -95,7 +95,7 @@ int main() {
         cin>>s>>s1;
         int minn=101;
         int c=0;
-        for(int i=0;i<s.size()-2;i++){
+        for(int i=0;i<=s.size()-s1.size();i++){
             c=0;
             for(int j=0;j<s1.size();j++){
                 if(s1[j]!=s[i+j]){
