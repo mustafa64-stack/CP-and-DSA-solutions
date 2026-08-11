@@ -68,7 +68,7 @@ Thus, in the above sequence of fights, Anna has a positive health remaining at t
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T13:20:07.425Z  
+**Submitted:** 2026-08-11T13:20:52.437Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -81,7 +81,7 @@ int main() {
     while(t--){
         int a,b,c;
         cin>>a>>b>>c;
-        if(a>=b+c){
+        if(a>=b &&a>=c){
             cout<<"yes"<<endl;
         }else cout<<"no"<<endl;
     }
