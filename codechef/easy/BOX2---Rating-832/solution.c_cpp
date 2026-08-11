@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t--){
+        int x,y,k;
+        cin>>x>>y>>k;
+        if(abs(x-y)==k){
+            cout<<0<<endl;
+        }else if(x+y>=k && (abs(x-y)%2==0 &&k%2==0 || abs(x-y)%2!=0 &&k%2!=0 )){
+            cout<<abs(k-abs(x-y))/2<<endl;
+        }else cout<<-1<<endl;
+    
+    }
+}
