@@ -76,7 +76,7 @@ Bob can thus eat all the chocolates without ever giving Alice a turn - so Alice 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T15:41:45.140Z  
+**Submitted:** 2026-08-12T15:46:13.238Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -98,7 +98,9 @@ int main() {
             if(sum%2==0){
                 al+=a[i];
             }else b+=a[i];
-        }cout<<al+2<<endl;
+        }if(al%2==0){
+            cout<<al<<endl;
+        }else cout<<al+2<<endl;
         
     }
 }
