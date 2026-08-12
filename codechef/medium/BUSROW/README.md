@@ -74,7 +74,7 @@ It's optimal to enter from the back, and walk through rows $6, 5, 4$ to reach it
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T14:46:04.301Z  
+**Submitted:** 2026-08-12T14:55:33.613Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -87,7 +87,8 @@ int main() {
     while(t--){
         double n,m,x;
         cin>>n>>m>>x;
-        cout<<ceil(n*m/x)<<endl;
+        double row=ceil(x/m);
+        cout<<min(row,n-row+1)<<endl;
     }
 }
 
