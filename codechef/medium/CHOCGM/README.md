@@ -76,7 +76,7 @@ Bob can thus eat all the chocolates without ever giving Alice a turn - so Alice 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T15:32:29.725Z  
+**Submitted:** 2026-08-12T15:34:07.348Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
