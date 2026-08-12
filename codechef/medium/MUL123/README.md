@@ -73,7 +73,7 @@ It can be verified that using fewer than two operations is not enough to make $N
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T15:13:55.005Z  
+**Submitted:** 2026-08-12T15:12:29.787Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -87,10 +87,9 @@ int main() {
         int n;
         cin>>n;
         int re=n%5;
-        if(n%3==0) cout<<0<<endl;
-         else if((n+1)%3==0 || (n+(5-re))%3==0){
+        if((n+1)%3==0 || (n+(5-re))%3==0){
             cout<<1<<endl;
-        }
+        } else if(n%3==0) cout<<0<<endl;
         else cout<<2<<endl;
     }
 }
