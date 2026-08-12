@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    
+            int x,y;
+        int flag=0;
+        cin>>x>>y;
+        for(int i=x;i<=y;i++){
+            if(i%2==0) flag=1;
+        }if(flag) cout<<"yes";
+        else cout<<"no";
+        cout<<"\n";
+    
+}
