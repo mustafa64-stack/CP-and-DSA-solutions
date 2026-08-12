@@ -6,8 +6,8 @@ int main() {
     int t;
     cin>>t;
     while(t--){
-        int n,m,x;
+        double n,m,x;
         cin>>n>>m>>x;
-        cout<<x/m<<endl;
+        cout<<ceil(n*m/x)<<endl;
     }
 }
