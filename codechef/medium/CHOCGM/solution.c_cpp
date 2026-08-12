@@ -17,7 +17,7 @@ int main() {
             if(sum%2==0){
                 al+=a[i];
             }else b+=a[i];
-        }cout<<al<<endl;
+        }cout<<al+2<<endl;
         
     }
 }
