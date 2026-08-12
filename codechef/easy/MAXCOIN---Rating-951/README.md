@@ -53,7 +53,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T11:53:33.409Z  
+**Submitted:** 2026-08-12T11:59:38.458Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -66,13 +66,13 @@ int main() {
     while(t--){
         int n,x;
         cin>>n>>x;
-        double s=0,r=0;
+        long long  s=0,r=0;
        
         for(int i=1;i<=n-x;i++){
-            s+=pow(2,i);
+            s+=1LL<<i;
         }
         for(int i=n;i>n-x;i--){
-            r+=pow(2,i);
+            r+=1LL<<i;
         }cout<<r-s<<endl;
     }
 }
