@@ -8,6 +8,7 @@ int main() {
     while(t--){
         double n,m,x;
         cin>>n>>m>>x;
-        cout<<ceil(n*m/x)<<endl;
+        double row=ceil(x/m);
+        cout<<min(row,n-row+1)<<endl;
     }
 }
