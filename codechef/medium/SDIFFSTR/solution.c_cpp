@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t--){
+        double finish,distancrbolt,tial,bosp;
+        cin>>finish>>distancrbolt>>tial>>bosp;
+        if(finish/bosp>=sqrt((2.0*(distancrbolt+finish))/tial)) cout<<"Tiger";
+        else cout<<"Bolt";
+        cout<<"\n";
+    }
+}
