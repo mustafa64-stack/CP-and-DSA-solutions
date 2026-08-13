@@ -68,7 +68,7 @@ Yes
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T10:29:49.085Z  
+**Submitted:** 2026-08-13T10:39:02.319Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,7 +79,18 @@ int main() {
     int t;
     cin>>t;
     while(t--){
-        
+        int n;
+        cin>>n;
+        int re1,re2,re0;
+        vector<int> a(n);
+        for(int i=0;i<n;i++){
+            cin>>a[i];
+            if(a[i]%3==0) re0++;
+            else if(a[i]%3==1) re1++;
+            else re2++;
+        }
+        if(re0>=1||re1>=3||re>=3 || (re1>=1 && re2>=1)) cout<<"yes"<<endl;
+        else cout<<"no"<<endl;
     }
 }
 
