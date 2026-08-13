@@ -65,7 +65,7 @@ DRAGON
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T20:19:28.267Z  
+**Submitted:** 2026-08-13T20:21:28.259Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
