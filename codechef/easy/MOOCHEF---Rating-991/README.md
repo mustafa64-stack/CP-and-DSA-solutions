@@ -55,7 +55,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T10:54:53.366Z  
+**Submitted:** 2026-08-13T10:56:15.662Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -69,7 +69,7 @@ int main() {
         int n,l,r;
         cin>>n>>l>>r;
         vector <int> a(n);
-        int maxx=0,h=0,minn=2*1e5+1;
+        int maxx=0,h=0,minn=0;
         
         for(int i=0;i<n;i++){
             cin>>a[i];
