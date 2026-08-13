@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b;
+        cin>>a>>b;
+        int rea,reb;
+        rea=(a%10)*10+(a/10)%10;
+        reb=(b%10)*10+(a/10)%10;
+        if(a>b ||a>reb ||rea>b||rea>reb) cout<<"yes"<<endl;
+        else cout<<"no"<<endl;
+    }
+}
