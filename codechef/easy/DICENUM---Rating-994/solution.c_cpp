@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t--){
+        vector <int> a(3),b(3);
+        int sa=0,sb=0;
+        for(int i=0;i<3;i++){
+            cin>>a[i];
+        }for(int i=0;i<3;i++){
+            cin>>b[i];
+        }sort(a.begin(),a.end());
+        sort(b.begin(),b.end());
+        for(int i=2;i>=0;i--){
+            sa=sa*10+a[i];
+        }for(int i=2;i>=0;i--){
+            sb=sb*10+b[i];
+        }if(sa>sb) cout<<"alice"<<endl;
+        else if(sb>sa) cout<<"bob"<<endl;
+        else cout<<"tie"<<endl;
+    }
+}
