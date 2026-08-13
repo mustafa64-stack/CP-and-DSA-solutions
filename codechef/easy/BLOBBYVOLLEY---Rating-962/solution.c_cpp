@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        string a;
+        cin>>a;
+        
+        // your code goes here
+        int al=0,b=0;
+        if(a[0]=='A') al++;
+        for(int i=1;i<n;i++){
+            if(a[i]=='A' &&a[i-1]=='A'){
+                al++;
+            }else if(a[i]=='B' &&a[i-1]=='B'){
+                b++;
+            }else continue;
+        }cout<<al<<" "<<b<<endl;
+    }
+
+}
