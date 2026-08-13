@@ -55,7 +55,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T10:51:52.530Z  
+**Submitted:** 2026-08-13T10:54:53.366Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -69,15 +69,16 @@ int main() {
         int n,l,r;
         cin>>n>>l>>r;
         vector <int> a(n);
-        int maxx=-2*1e5+1,h=0,minn=2*1e5+1;
+        int maxx=0,h=0,minn=2*1e5+1;
+        
         for(int i=0;i<n;i++){
             cin>>a[i];
             if(a[i]>=l && a[i]<=r) h++;
             else h--;
             maxx=max(maxx,h);
             minn=min(minn,h);
-        }if(l!=r) cout<<maxx<<" "<<minn<<endl;
-        else cout<<0<<" "<<minn<<endl;
+        }cout<<maxx<<" "<<minn<<endl;
+        
     }
 }
 
