@@ -66,7 +66,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T11:23:48.925Z  
+**Submitted:** 2026-08-13T11:24:24.886Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -83,8 +83,8 @@ int main() {
         vector <long long> a(n);
         for(int i=0;i<n;i++){
             cin>>a[i];
-            if(a[i]>=k) flag=1;
-            minn=min(minn,a[i]%k);
+            if(a[i]>=k) {flag=1;
+            minn=min(minn,a[i]%k);}
         }if (flag) cout<<minn<<endl;
         else cout<<-1<<endl;
     }
