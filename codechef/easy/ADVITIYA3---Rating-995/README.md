@@ -66,7 +66,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T11:20:49.594Z  
+**Submitted:** 2026-08-13T11:21:34.617Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -78,7 +78,7 @@ int main() {
     cin>>t;
     while(t--){
         long long minn=1e9;
-        int n,k,flag=0;
+        long long n,k,flag=0;
         cin>>n>>k;
         vector <long long> a(n);
         for(int i=0;i<n;i++){
