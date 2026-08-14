@@ -65,7 +65,7 @@ DRAGON
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T20:21:35.259Z  
+**Submitted:** 2026-08-14T08:32:50.518Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -84,26 +84,7 @@ int main() {
         }for(int i=0;i<3;i++){
             cin>>s[i];
             ss+=s[i];
-        }if(sd>ss){
-            cout<<"dragon"<<endl;
-        }else if(ss>sd){
-            cout<<"sloth"<<endl;
-        }else if(ss==sd){
-            if(d[0]>s[0]){
-            cout<<"dragon"<<endl;
-        }else if(d[0]<s[0]){
-            cout<<"sloth"<<endl;
-        }else{
-            if(d[1]>s[1]){
-            cout<<"dragon"<<endl;
-        }else if(d[1]<s[1]){
-            cout<<"sloth"<<endl;
-        }else{
-            if(d[2]>s[2]){
-            cout<<"dragon"<<endl;
-        }else if(d[2]<s[2]){
-            cout<<"sloth"<<endl;
-        }else cout<<"tie"<<endl;
+        }l;
         }
     }}
 }}
