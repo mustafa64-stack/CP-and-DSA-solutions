@@ -56,7 +56,7 @@ NO 3
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-14T13:00:03.445Z  
+**Submitted:** 2026-08-14T13:02:40.612Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -73,7 +73,7 @@ int main() {
         vector<int> a(n);
         for(int i=0;i<n;i++){
             cin>>a[i];
-            if(a[i]+ex-k>0){
+            if(a[i]+ex-k>=0){
                 ex=a[i]+ex-k;
                 a[i]=k;
             }else a[i]=a[i]+ex;
