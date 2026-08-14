@@ -65,7 +65,7 @@ DRAGON
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-14T08:32:50.518Z  
+**Submitted:** 2026-08-14T08:44:19.516Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -76,18 +76,16 @@ int main() {
     int t;
     cin>>t;
     while(t--){
-        int d[3],s[3];
-        int sd=0,ss=0;
-        for(int i=0;i<3;i++){
-            cin>>d[i];
-            sd+=d[i];
-        }for(int i=0;i<3;i++){
-            cin>>s[i];
-            ss+=s[i];
-        }l;
-        }
-    }}
-}}
+        int d1,d2,d3,s1,s2,s3;
+        cin>>d1>>d2>>d3>>s1>>s2>>s3;
+        int sd=d1+d2+d3,ss=s1+s2+s3;
+        pair<int,pair<int,int>> p1={sd,{d1,d2}};
+        pair<int,pair<int,int>> p2={ss,{s1,s2}};
+        if(p1>p2) cout<<"dragon"<<endl;
+        else if(p2>p1) cout<<"sloth"<<endl;
+        else cout<<"tie"<<endl;
+    }
+}
 
 ```
 
