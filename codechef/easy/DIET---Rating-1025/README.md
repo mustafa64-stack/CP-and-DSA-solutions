@@ -56,7 +56,7 @@ NO 3
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-14T12:57:38.731Z  
+**Submitted:** 2026-08-14T13:00:03.445Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
