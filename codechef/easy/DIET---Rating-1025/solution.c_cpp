@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t--){
+        int n,k;
+        cin>>n>>k;
+        int ex=0;
+        vector<int> a(n);
+        for(int i=0;i<n;i++){
+            cin>>a[i];
+            if(a[i]+ex-k>0){
+                ex=a[i]+ex-k;
+                a[i]=k;
+            }else a[i]=a[i]+ex;
+            
+        }int ap=0;
+        for(int i=0;i<n;i++){
+            if(a[i]<k){
+                ap=i+1;
+                break;
+            }
+        }if(ap) cout<<"NO "<<ap<<endl;
+        else cout<<"YES"<<endl;
+    }
+}
