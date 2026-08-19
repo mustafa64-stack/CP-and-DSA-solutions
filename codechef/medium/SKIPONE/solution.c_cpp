@@ -18,7 +18,9 @@ int main() {
             if(k>=a[i] ){
                 k-=a[i];
                 o++;
-            }else if(d!=0 && a[i]<=k+maxx ){ o++;
+            }else if(d!=0 && a[i]<=k+maxx ){ 
+                k = k + maxx - a[i];
+                o++;
             d--;
                 
             }else break;
