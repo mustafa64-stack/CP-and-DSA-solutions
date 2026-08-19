@@ -58,24 +58,42 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:18:28.920Z  
+**Submitted:** 2026-08-19T15:47:12.920Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
-#define int long long
+
 int main() {
 	// your code goes here
     int t;
     cin>>t;
     while(t--){
-        int n,k,lf=0;
-        cin>>n>>k;
-        vector <int> a(n);
+        
+        long long n,k,o=0,maxx=0;
+        cin>>n>>k;.
+        vector <long long> a(n);
         for(int i=0;i<n;i++) {cin>>a[i];
-        if(lf<=k)
-            lf+=a[i];
         }
+        for(int i=0;i<n;i++) {
+        
+            
+            maxx=max(a[i],maxx);
+            
+        }k+=maxx;
+        for(int i=0;i<n;i++) {cin>>a[i];
+        if(k>=0) {
+            if(k>=a[i]) {o++;
+            k-=a[i];
+            if(maxx==a[i]) break;
+            }
+        }
+        }
+        k+=maxx;
+        cout<<o+1<<endl;
+        
+        
+        
     }
 }
 
