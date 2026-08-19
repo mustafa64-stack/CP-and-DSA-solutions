@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T16:26:00.348Z  
+**Submitted:** 2026-08-19T16:26:51.546Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -81,7 +81,9 @@ int main() {
             if(k>=a[i] ){
                 k-=a[i];
                 o++;
-            }else if(d!=0 && a[i]<=k+maxx ){ o++;
+            }else if(d!=0 && a[i]<=k+maxx ){ 
+                k = k + maxx - a[i];
+                o++;
             d--;
                 
             }else break;
