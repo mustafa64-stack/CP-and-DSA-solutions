@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:48:19.358Z  
+**Submitted:** 2026-08-19T16:14:54.850Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -70,30 +70,20 @@ int main() {
     cin>>t;
     while(t--){
         long long k;
-        int n,o=0,maxx=0;
+        long long n,o=0,maxx=0,d=1,m=1;
         cin>>n>>k;
-        vector <int> a(n);
-        for(int i=0;i<n;i++) {cin>>a[i];
-        }
+        vector <long long> a(n);
         for(int i=0;i<n;i++) {
-        
-            
-            maxx=max(a[i],maxx);
-            
-        }k+=maxx;
-        for(int i=0;i<n;i++) {
-        if(maxx==a[i]) break;
-        if(k>=0) {
-            if(k>=a[i]) {o++;
-            k-=a[i];
-            
+            cin>>a[i];
+            }for(int i=0;i<n;i++) {
+            if(k>=a[i] ){
+                k-=a[i];
+                o++;
+            }else if(d!=0 && a[i+1]>=k){ o++;
+            d--;
+                m--;
             }
-        }
-        }
-        k+=maxx;
-        cout<<o+1<<endl;
-        
-        
+        }cout<<o<<endl;
         
     }
 }
