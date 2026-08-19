@@ -58,18 +58,24 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:10:53.918Z  
+**Submitted:** 2026-08-19T15:18:28.920Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
-
+#define int long long
 int main() {
 	// your code goes here
     int t;
     cin>>t;
     while(t--){
-        
+        int n,k,lf=0;
+        cin>>n>>k;
+        vector <int> a(n);
+        for(int i=0;i<n;i++) {cin>>a[i];
+        if(lf<=k)
+            lf+=a[i];
+        }
     }
 }
 
