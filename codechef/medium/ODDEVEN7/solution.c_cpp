@@ -17,7 +17,7 @@ int main() {
             if(a[i]%2==0) ne++;
             else no++;
         }int o=min(ne,no);
-        if(2*o+1<max(ne,no))
+        if(2*o<=max(ne,no))
         cout<<o+(o+1)<<endl;
         else cout<<o+max(ne,no)<<endl;
     }
