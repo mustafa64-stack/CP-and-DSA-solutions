@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T16:24:24.843Z  
+**Submitted:** 2026-08-19T16:26:00.348Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -75,12 +75,13 @@ int main() {
         vector <long long> a(n);
         for(int i=0;i<n;i++) {
             cin>>a[i];
-            maxx=max(maxx,a[i]);
+            
             }for(int i=0;i<n;i++) {
+                maxx=max(maxx,a[i]);
             if(k>=a[i] ){
                 k-=a[i];
                 o++;
-            }else if(d!=0 && a[i+1]<=k+maxx ){ o++;
+            }else if(d!=0 && a[i]<=k+maxx ){ o++;
             d--;
                 
             }else break;
