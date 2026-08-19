@@ -54,7 +54,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T14:58:38.901Z  
+**Submitted:** 2026-08-19T14:59:11.064Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -76,7 +76,7 @@ int main() {
             if(a[i]%2==0) ne++;
             else no++;
         }int o=min(ne,no);
-        if(2*o+1<=max(ne,no))
+        if(2*o+1<max(ne,no))
         cout<<o+(o+1)<<endl;
         else cout<<o+max(ne,no)<<endl;
     }
