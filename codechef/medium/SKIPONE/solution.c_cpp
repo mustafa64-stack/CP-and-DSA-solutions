@@ -16,9 +16,9 @@ int main() {
             if(k>=a[i] ){
                 k-=a[i];
                 o++;
-            }else if(d!=0 && a[i+1]>=k){ o++;
+            }else if(d!=0 && a[i]>=k){ o++;
             d--;
-                m--;
+                break;
             }
         }cout<<o<<endl;
         
