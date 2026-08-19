@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T16:14:54.850Z  
+**Submitted:** 2026-08-19T16:17:47.844Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,9 +79,9 @@ int main() {
             if(k>=a[i] ){
                 k-=a[i];
                 o++;
-            }else if(d!=0 && a[i+1]>=k){ o++;
+            }else if(d!=0 && a[i]>=k){ o++;
             d--;
-                m--;
+                break;
             }
         }cout<<o<<endl;
         
