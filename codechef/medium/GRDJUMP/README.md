@@ -65,7 +65,7 @@ For the given costs, this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T15:23:52.465Z  
+**Submitted:** 2026-08-26T16:01:52.397Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -78,29 +78,11 @@ int main() {
     while(t--){
         int a,b,p,q,r;
         cin>>a>>b>>p>>q>>r;
-        int m=0,n=0,c=0;
-        while(m!=a &&n!=b){
-            if((m-a)==(n-b) && m-a>1) {c+=max(2*r,p+q);
-                m+=2;
-                n+=2;
-            } else if((m-a)==(n-b) && (m-a)==1){
-                c+=max(r,p+q);
-                m+=1;
-                n+=1;
-            }else if(((a-m)-(b-n))>1 ) {
-                c+=p;
-                m+=2;
-            }else if(((a-m)-(b-n))==1 ) {
-                c+=p;
-                m+=1;
-            }else if(((b-n)-(a-m))>1 ){
-                c+=q;
-                n+=2;
-            }else if(((b-n)-(a-m))==1 ){
-                c+=q;
-                n+=1;
-            }
-        }cout<<c<<endl;
+        int c=1e5;
+        for(int i=0;i<min(a,b),i++){
+            
+        }
+        cout<<c<<endl;
 }
 }
 
