@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        vector <int> c(n);
+        for(int i=0;i<n;i++) cin>>c[i];
+        int maxx=0;
+        for(int i=0;i<n-1;i++){
+            for(int j=i;i<n;j++){
+                if(maxx<c[i]+c[j]){
+                    maxx=c[i]+c[j];
+                }
+            }
+        }sort(c.begin(),c.end());
+        cout<<max(c[n-1],maxx);
+    }
+}
