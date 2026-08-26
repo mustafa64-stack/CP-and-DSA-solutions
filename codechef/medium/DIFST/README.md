@@ -82,7 +82,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T15:39:48.738Z  
+**Submitted:** 2026-08-26T16:03:53.305Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -93,6 +93,16 @@ int main() {
     int t;
     cin>>t;
     while(t--){
+        int n,s=0;
+        cin>>n;
+        vector<int> a(n);
+        for(int i=0;i<n;i++) cin>>a[i];
+        for(int i=0;i<n;i++){
+            int minn=a[i];
+            for(int j=i+1;j<n;j++){
+                if(a[i]-)
+            }
+        }cout<<s<<endl;
         
     }
 }
