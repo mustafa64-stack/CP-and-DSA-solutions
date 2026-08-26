@@ -65,7 +65,7 @@ For the given costs, this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T16:01:52.397Z  
+**Submitted:** 2026-08-26T16:10:51.438Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,7 +79,8 @@ int main() {
         int a,b,p,q,r;
         cin>>a>>b>>p>>q>>r;
         int c=1e5;
-        for(int i=0;i<min(a,b),i++){
+        int k=min(a,b);
+        for(int i=0;i<k,i++){
             
         }
         cout<<c<<endl;
