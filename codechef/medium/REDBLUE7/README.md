@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T15:06:55.537Z  
+**Submitted:** 2026-09-16T15:16:26.528Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -67,12 +67,23 @@ int main() {
     int t;
     cin>>t;
     while(t--){
-        int n;
+        int n,sum=0;
         cin>>n;
-        vector<int> arr[n];
+        vector<int> arr(n);
         for(int i=0;i<n;i++){
             cin>>arr[i];
+            sum+=arr[i];
         }
+        sort(arr.begin(),arr.end());
+        int ssum=0;
+        int c=0;
+        int maxx=0;
+        for(int i=n;i>=n/2;i--){
+            c++;
+            ssum+=arr[i];
+            sum-=arr[i];
+            maxx=max(c*ssum+(n-c)*sum,maxx);
+        }cout<<maxx<<endl;
         
     }
 }
