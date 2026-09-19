@@ -48,15 +48,15 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 7 ms (beats 13.41%)  
-**Memory:** 8.6 MB (beats 36.11%)  
-**Submitted:** 2026-09-19T19:56:53.607Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 8.4 MB (beats 91.85%)  
+**Submitted:** 2026-09-19T19:59:17.294Z  
 
 ```cpp
 class Solution {
 public:
     bool isPalindrome(int x) {
-        long long rev_num=0;
+        double rev_num=0;
     int num=x;
     int last_digit;
     while(num>0){
