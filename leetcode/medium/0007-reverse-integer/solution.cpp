@@ -5,10 +5,8 @@ public:
         int last_digit;
         while(x!=0){
             last_digit=x%10;
-            if((rev_num>INT_MAX/10 || rev_num==INT_MAX/10 && rev_num%10<=last_digit) ||(rev_num<INT_MIN/10 || rev_num==INT_MIN/10 && rev_num%10>=last_digit))
-            {
+            if (rev_num > INT_MAX / 10 || rev_num < INT_MIN / 10)
                 return 0;
-            }
             rev_num=rev_num*10+last_digit;
             x=x/10;
         }
