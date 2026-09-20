@@ -36,9 +36,9 @@ Output: ["h","a","n","n","a","H"]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 79 ms (beats 2.08%)  
-**Memory:** 27.1 MB (beats 80.72%)  
-**Submitted:** 2026-09-20T15:30:41.792Z  
+**Runtime:** 69 ms (beats 2.08%)  
+**Memory:** 27.3 MB (beats 15.58%)  
+**Submitted:** 2026-09-20T15:30:54.537Z  
 
 ```cpp
 class Solution {
