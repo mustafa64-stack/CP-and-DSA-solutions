@@ -49,7 +49,7 @@ The third line has an integer, $tax_percent$ (the percentage of $mealCost$ being
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T06:12:06.138Z  
+**Submitted:** 2026-09-28T06:13:26.497Z  
 
 ```cpp
 #include <bits/stdc++.h>
@@ -69,7 +69,7 @@ string rtrim(const string &);
  */
 
 void solve(double meal_cost, int tip_percent, int tax_percent) {
-    cout<<(int)(meal_cost+meal_cost*tip_percent/100+meal_cost*tax_percent/100);
+    cout<<round(meal_cost+meal_cost*tip_percent/100+meal_cost*tax_percent/100);
 }
 
 int main()
