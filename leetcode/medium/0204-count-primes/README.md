@@ -42,15 +42,15 @@ Output: 0
 ## Solution
 
 **Language:** C++  
-**Runtime:** 89 ms  
-**Memory:** 9.7 MB  
-**Submitted:** 2026-10-02T08:51:42.046Z  
+**Runtime:** 106 ms  
+**Memory:** 10.1 MB  
+**Submitted:** 2026-10-02T08:52:31.029Z  
 
 ```cpp
 class Solution {
 public:
     int countPrimes(int n) {
-        if(n<2) return 0;
+        if(n<=2) return 0;
         vector<bool> prime(n+1,true);
         for(long long i=2;i*i<n;i++){
             if(prime[i]==true){
