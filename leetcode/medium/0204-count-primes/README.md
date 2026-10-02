@@ -42,29 +42,28 @@ Output: 0
 ## Solution
 
 **Language:** C++  
-**Runtime:** 103 ms  
-**Memory:** 10.3 MB  
-**Submitted:** 2026-10-02T09:12:14.931Z  
+**Runtime:** 606 ms (beats 40.10%)  
+**Memory:** 130.1 MB (beats 28.66%)  
+**Submitted:** 2026-10-02T14:21:06.452Z  
 
 ```cpp
 class Solution {
 public:
     int countPrimes(int n) {
-        if(n<2) return 0;
-        vector<bool> prime(n+1,true);
-        for(long long i=2;i*i<=n;i++){
-            if(prime[i]==true){
-                for(long long j=i*i;j<=n;j+=i)
-                 prime[j]=false;
+        if(n<=2) return 0;
+        vector<char> primes(n/2, 1);
+        int ans = 1;
+        for (int  i = 3; i*i < n; i+=2) {
+            if (primes[i/2]) {
+                
+                
+                for (int j = i*i; j < n; j += 2*i) primes[j/2] = 0;
             }
         }
-    
-        long long cnt=1;
-        for(long long i=3;i<=n;i+=2){
-            if(prime[i]){
-                cnt++;
-            }
-        }return cnt;
+        for(int i=3;i<n;i+=2){
+            if(primes[i/2]) ans++;
+        }
+        return ans;
     }
 };
 ```
