@@ -42,16 +42,16 @@ Output: 0
 ## Solution
 
 **Language:** C++  
-**Runtime:** 104 ms  
-**Memory:** 9.2 MB  
-**Submitted:** 2026-10-02T08:44:17.847Z  
+**Runtime:** 125 ms  
+**Memory:** 9.7 MB  
+**Submitted:** 2026-10-02T08:45:42.216Z  
 
 ```cpp
 class Solution {
 public:
     int countPrimes(int n) {
         vector<bool> prime(n+1,true);
-        for(long long i=2;i<n;i++){
+        for(long long i=2;i*i<n;i++){
             if(prime[i]==true){
                 for(long long j=i*i;j<n;j+=i)
                  prime[j]=false;
