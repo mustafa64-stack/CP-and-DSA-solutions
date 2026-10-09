@@ -49,9 +49,9 @@ rotate 2 steps to the right: [3,99,-1,-100]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 3 ms (beats 63.46%)  
-**Memory:** 263.3 MB (beats 61.04%)  
-**Submitted:** 2026-10-09T12:24:59.309Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 263.5 MB (beats 7.67%)  
+**Submitted:** 2026-10-09T12:25:08.539Z  
 
 ```cpp
 class Solution {
