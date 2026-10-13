@@ -47,9 +47,9 @@ Explanation: The smallest positive integer 1 is missing.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 4 ms (beats 37.79%)  
-**Memory:** 55.2 MB (beats 29.72%)  
-**Submitted:** 2026-10-13T13:56:57.635Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 55.1 MB (beats 62.12%)  
+**Submitted:** 2026-10-13T13:57:05.841Z  
 
 ```cpp
 class Solution {
