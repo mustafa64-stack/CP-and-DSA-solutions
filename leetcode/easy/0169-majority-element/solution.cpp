@@ -5,10 +5,14 @@ public:
         for(int i=0;i<nums.size();i++){
             if(cnt==0){
                 ele=nums[i];
-                cnt++;
             }
-            else if(nums[i]==ele) cnt++;
+            if(nums[i]==ele) cnt++;
             else cnt--;
-        } return ele;
+        }cnt=0;
+        for(int i=0;i<nums.size();i++){
+            if(ele==nums[i]) cnt++;
+       }
+       if(cnt>nums.size()/2) return ele;
+       return -1;
     }
 };
