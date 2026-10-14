@@ -42,22 +42,27 @@ Output: 2
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 38.40%)  
-**Memory:** 42.1 MB (beats 23.19%)  
-**Submitted:** 2026-10-14T03:01:58.974Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 41.7 MB (beats 45.77%)  
+**Submitted:** 2026-10-14T03:13:08.499Z  
 
 ```cpp
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        map<int,int> mpp;
+        int cnt=0,ele;
         for(int i=0;i<nums.size();i++){
-            mpp[nums[i]]++;
-        }
-        for(auto it: mpp){
-            if(it.second>nums.size()/2) return it.first;
-        }
-        return -1;
+            if(cnt==0){
+                ele=nums[i];
+            }
+            if(nums[i]==ele) cnt++;
+            else cnt--;
+        }cnt=0;
+        for(int i=0;i<nums.size();i++){
+            if(ele==nums[i]) cnt++;
+       }
+       if(cnt>nums.size()/2) return ele;
+       return -1;
     }
 };
 ```
