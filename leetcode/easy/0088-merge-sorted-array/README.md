@@ -60,34 +60,25 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 3.27%)  
-**Memory:** 12.7 MB (beats 5.15%)  
-**Submitted:** 2026-10-14T04:03:14.637Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 12.4 MB (beats 86.23%)  
+**Submitted:** 2026-10-14T05:24:42.935Z  
 
 ```cpp
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-        int left=0;
-        int right=0;
-        int i=0;
-        vector <int> v(m);
-        for(int i=0;i<m;i++){
-            v[i]=nums1[i];
-        }
-        while(left<m && right <n){
-            if(v[left]>=nums2[right]){
-                nums1[i++]=nums2[right++];
+        int r=n-1,l=m-1;
+        int idx=m+n-1;
+        while(l>=0 && r>=0){
+            if(nums1[l]<=nums2[r]){
+                nums1[idx--]=nums2[r--];
             }else {
-                nums1[i++]=v[left++];
+                nums1[idx--]=nums1[l--];
             }
         }
-        while(left<m) {
-            nums1[i++]=v[left++];
-        }
-        while(right<n){
-            nums1[i++]=nums2[right++];
-        }
+        while(r>=0) nums1[idx--]=nums2[r--];
+
     }
 };
 ```
