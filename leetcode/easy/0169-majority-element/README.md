@@ -44,7 +44,7 @@ Output: 2
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 42.1 MB (beats 23.19%)  
-**Submitted:** 2026-10-14T03:20:29.619Z  
+**Submitted:** 2026-10-14T03:13:31.809Z  
 
 ```cpp
 class Solution {
@@ -54,11 +54,15 @@ public:
         for(int i=0;i<nums.size();i++){
             if(cnt==0){
                 ele=nums[i];
-                cnt++;
             }
-            else if(nums[i]==ele) cnt++;
+            if(nums[i]==ele) cnt++;
             else cnt--;
-        } return ele;
+        }cnt=0;
+        for(int i=0;i<nums.size();i++){
+            if(ele==nums[i]) cnt++;
+       }
+       if(cnt>nums.size()/2) return ele;
+       return -1;
     }
 };
 ```
