@@ -50,9 +50,9 @@ Explanation: Subarray [-2] has maximum sum -2.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 26.34%)  
-**Memory:** 43.3 MB (beats 99.86%)  
-**Submitted:** 2026-10-18T07:42:05.881Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 43.5 MB (beats 96.49%)  
+**Submitted:** 2026-10-18T07:42:13.392Z  
 
 ```cpp
 class Solution {
