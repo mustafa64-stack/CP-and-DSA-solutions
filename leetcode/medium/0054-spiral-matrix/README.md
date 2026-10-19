@@ -36,9 +36,9 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 2.42%)  
-**Memory:** 9.2 MB (beats 83.64%)  
-**Submitted:** 2026-10-19T18:01:56.107Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 9.4 MB (beats 56.07%)  
+**Submitted:** 2026-10-19T18:02:04.261Z  
 
 ```cpp
 class Solution {
