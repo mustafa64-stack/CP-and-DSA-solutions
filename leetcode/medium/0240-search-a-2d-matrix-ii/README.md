@@ -42,9 +42,9 @@ Output: false
 ## Solution
 
 **Language:** C++  
-**Runtime:** 98 ms (beats 13.13%)  
-**Memory:** 18.9 MB (beats 37.18%)  
-**Submitted:** 2026-10-20T09:59:35.770Z  
+**Runtime:** 96 ms (beats 13.86%)  
+**Memory:** 18.8 MB (beats 37.18%)  
+**Submitted:** 2026-10-20T09:59:43.773Z  
 
 ```cpp
 class Solution {
