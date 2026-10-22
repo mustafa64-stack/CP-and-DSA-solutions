@@ -48,9 +48,9 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 9.8 MB (beats 74.96%)  
-**Submitted:** 2026-10-22T18:29:57.006Z  
+**Runtime:** 0 ms  
+**Memory:** 7.7 MB  
+**Submitted:** 2026-10-22T18:29:38.323Z  
 
 ```cpp
 class Solution {
