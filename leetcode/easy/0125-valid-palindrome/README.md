@@ -48,31 +48,32 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 45.50%)  
-**Memory:** 9.7 MB (beats 99.09%)  
-**Submitted:** 2026-10-22T18:27:42.463Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 9.8 MB (beats 74.96%)  
+**Submitted:** 2026-10-22T18:29:57.006Z  
 
 ```cpp
 class Solution {
 public:
-    bool isAlphanum(char ch){
-        if((ch>='0' && ch<='9')|| (tolower(ch)>='a' && tolower(ch)<='z') )
-        return true;
-        return false;
-    }
     bool isPalindrome(string s) {
-        int st=0,end=s.size()-1;
-        while(st<end){
-            if(!isAlphanum(s[st])){
-                st++;continue;
+        int l=0;
+        int r = s.size()-1;
+        while(l<=r){
+            if(!isalnum(s[l])){
+                l++;
+                continue;
             }
-            if(!isAlphanum(s[end])){
-                end--;continue;
+            if(!isalnum(s[r])){
+                r--;
+                continue;
             }
-            if(tolower(s[st])!=tolower(s[end])){
+            if(tolower(s[l]) != tolower(s[r])){
                 return false;
             }
-            st++;end--;
+            else{
+                l++;
+                r--;
+            }
         }
         return true;
     }
